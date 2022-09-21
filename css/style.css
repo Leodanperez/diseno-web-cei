@@ -1,0 +1,23 @@
+h1 {
+    color: burlywood;
+    text-align: center;    
+}
+
+a:hover {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
