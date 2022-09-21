@@ -21,3 +21,11 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+.etiqueta-h1 {
+    color: #ff7b00;
+}
+
+#titulo-id {
+    color: #ff00b3;
+}

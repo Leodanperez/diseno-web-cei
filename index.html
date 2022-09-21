@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,20 @@
     <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body style="background-color: white;">
-    <h1>Etiquetas de encabezado</h1>
-    <h1>Titulo h1</h1>
+    <h1 class="etiqueta-h1">Etiquetas de encabezado</h1>
+    <h1 id="titulo-id">Titulo h1</h1>
     <h2>Titulo h2</h2>
     <h3>Titulo h3</h3>
     <h4>Titulo h4</h4>
     <h5>Titulo h5</h5>
-    <h6>Titulo h6</h6>
+    <h6 class="etiqueta-h1">Titulo h6</h6>
 
     <h1>Etiqueta de parrafo</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores odit, nostrum mollitia, voluptatem recusandae animi ex asperiores, fuga accusantium expedita inventore ea veniam fugit dolorum. In doloremque voluptatum ratione commodi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores odit, nostrum mollitia, voluptatem recusandae
+        animi ex asperiores, fuga accusantium expedita inventore ea veniam fugit dolorum. In doloremque voluptatum
+        ratione commodi.</p>
 
     <h1>Etiqueta de enlace</h1>
     <a href="https://www.facebook.com/">Facebook</a> <br>
@@ -29,7 +33,10 @@
 
     <!-- Esto es el formato en html -->
     <h1>Elementos de formato HTML</h1>
-    <p>Esto es un parrafo, <b>que esta en negrita</b> adipisicing elit. <strong>Sint assumenda</strong> atque corrupti doloribus <i>rerum</i>, dicta <em>officiis</em> fugiat tempora <mark>temporibus</mark>, ab at <small>mollitia</small>, eligendi <del>neque</del> delectus <ins>voluptas</ins>. Temporibus <sub>repellendus</sub> odit <sup>quod</sup>.</p>
+    <p>Esto es un parrafo, <b>que esta en negrita</b> adipisicing elit. <strong>Sint assumenda</strong> atque corrupti
+        doloribus <i>rerum</i>, dicta <em>officiis</em> fugiat tempora <mark>temporibus</mark>, ab at
+        <small>mollitia</small>, eligendi <del>neque</del> delectus <ins>voluptas</ins>. Temporibus
+        <sub>repellendus</sub> odit <sup>quod</sup>.</p>
 
     <h1 style="background-color: rgba(0, 0, 0, 0.1);">Tomato</h1>
     <h1 style="background-color:rgba(0, 85, 231, 0.147);">Orange</h1>
@@ -81,16 +88,44 @@
     </table><br>
     <table>
         <tr>
-          <th>Name</th>
-          <td>Jill</td>
+            <th>Name</th>
+            <td>Jill</td>
         </tr>
         <tr>
-          <th rowspan="2">Phone</th>
-          <td>555-1234</td>
+            <th rowspan="2">Phone</th>
+            <td>555-1234</td>
         </tr>
         <tr>
-          <td>555-8745</td>
+            <td>555-8745</td>
         </tr>
-      </table>  
+    </table><br>
+    <h1>Listas HTML (Ordenadas y Desordenadas)</h1>
+    <p>Lista desordenada</p>
+    <ul style="list-style-type: circle;">
+        <li>Cafe</li>
+        <li>Te</li>
+        <li>Refresco</li>
+    </ul>
+    <br>
+    <p>Lista ordenada</p>
+    <ol type="I">
+        <li>Cafe</li>
+        <li>Te</li>
+        <li>Refresco</li>
+    </ol>
+
+    <h1>Iframe</h1>
+    <iframe src="https://www.w3schools.com" height="200" width="300" title="Iframe Example"></iframe>
+    <br>
+
+    <button type="button" onclick="clickFecha()">Cambiar de nombre</button>
+    <div id="hora">Leodan</div>
+
+    <script>
+        function clickFecha() {            
+            document.getElementById('hora').innerHTML = 'Alexis';            
+        }        
+    </script>
 </body>
+
 </html>
